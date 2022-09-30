@@ -1,0 +1,163 @@
+.after-head {
+	background: url("images/pic1.png");
+	background-size: cover;
+	position: relative;
+	z-index: 1;
+}
+
+.after-head::after {
+	content: "";
+	clear: both;
+	display: block;
+
+	background: rgba(0, 0, 0, .5);
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	z-index: -1;
+}
+
+header p {
+	color: #bea44d;
+}
+
+h1 {
+	font-family: 'Lato', sans-serif;
+	font-size: 65px;
+}
+
+h1 span {
+	color: #bea44d;
+	background-color: white;
+}
+
+.color {
+	color: #836B13;
+}
+
+.border {
+	border-color: #916c02;
+	background-color: #f9f8f3;
+	padding: 20px;
+}
+
+.btn {
+	background-color: #bea44d;
+
+}
+
+.form-control {
+	background-color: #fffaef;
+}
+
+.before-footer {
+	background-color: #f9edd5;
+}
+
+.before-footer p {
+	text-align: justify;
+}
+
+ol.v {
+	list-style-type: none;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.card-text {
+	text-align: justify;
+}
+
+.carousel-control-prev-icon {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	margin-left: -230px;
+	background: 50%/100% 100% no-repeat;
+	border: 2px solid darkred;
+	border-radius: 5px;
+	padding: 20px;
+}
+
+.carousel-control-next-icon {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	margin-right: -230px;
+	background: 50%/100% 100% no-repeat;
+	border: 2px solid darkred;
+	border-radius: 5px;
+	padding: 20px;
+	background-color: #bea44d;
+}
+
+.footer {
+	background-color: #bea44d;
+}
+
+.before-footer .border {
+	background-color: #bea44d;
+	border-radius: 50%;
+}
+
+
+
+
+
+
+
+@media only screen and (max-width:768px) {
+
+	.container{
+		margin: auto;
+	}
+
+	.after-head h1 {
+		text-align: center;
+		/* font-size: large; */
+		font-size: 40px;
+		margin: auto;
+		padding: 0%;
+		margin: 0%;
+	}
+
+	.carousel-control-prev-icon {
+		display: inline-block;
+		width: 20px;
+		height: 20px;
+		margin-left: -20px;
+		background: 50%/100% 100% no-repeat;
+		border: 2px solid darkred;
+		border-radius: 5px;
+		padding: 10px;
+	}
+
+	.carousel-control-next-icon {
+		display: inline-block;
+		width: 10px;
+		height: 10px;
+		margin-right: -20px;
+		background: 50%/100% 100% no-repeat;
+		border: 2px solid darkred;
+		border-radius: 5px;
+		padding: 10px;
+		background-color: #bea44d;
+	}
+
+	.before-footer{
+		/* padding: 20px; */
+		margin: auto;
+		border-radius: 0%;
+		padding-right: 0%;
+		margin-right: 0%;
+		padding-left: 0%;
+	}
+
+	.before-footer p{
+		text-align: justify;
+	}
+}
